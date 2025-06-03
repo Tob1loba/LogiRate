@@ -69,6 +69,9 @@ main{
     font-size: var(--Font-size5);
     font-weight: bold;
 }
+.header-content p{
+    margin-bottom: 0;
+}
 
 #content-1{
     font-family: var(--Family1);
@@ -113,17 +116,31 @@ main{
 #content-1-btns {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 5rem;
     margin-top: 1rem;
     font-size: var(--Font-size1) !important;
     
 }
 #content-1-btns a{
     font-size: var(--Font-size8);
-    padding: 10px 60px;
+    padding: 10px 32px;
     border-radius: 25px;
 }
-    
+#content-1-btns a:hover{
+    background-color: var(--Green);
+    border: none;
+    transition-duration: 0.3s;
+}
+#logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 10rem;
+}
+#logo img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}
 
 
 
@@ -179,16 +196,16 @@ main{
         margin-top: 1rem;
         font-size: var(--Font-size4);
     }
-    #content-1-btns :hover{
-        background-color: var(--Warning);
-        border: none;
-        transition-duration: 0.3s;
-
-    }
     #content-1-btns a{
         font-size: var(--Font-size4);
         padding: 6px;
         border-radius: 20px;
+    }
+    #content-1-btns a:hover{
+        background-color: var(--Green);
+        border: none;
+        transition-duration: 0.3s;
+
     }
     #naira{
         font-size: var(--Font-size1);
@@ -196,4 +213,15 @@ main{
     #naira, #content-1-btns a{
         font-weight: 500;
     }
+    #logo{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 0;
+    }
+    #logo img{
+        width: 4rem;
+        height: 4rem;
+        object-fit: contain;
+    }
+
 }
