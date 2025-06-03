@@ -170,14 +170,14 @@ main{
         gap: .5rem;
     }
     #advert img{
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
     #advert1, #advert2, #advert3 {
         gap: .7rem;
         margin-bottom: 1rem;
         padding: 5px;
-        font-size: var(--Font-size3);
+        font-size: var(--Font-size4);
     }
     #advert1 {
         border-radius: 20px 0 0 0 !important;
@@ -186,7 +186,7 @@ main{
         border-radius: 0 20px 0 0 !important;
     }
     #content-1-text{
-        font-size: var(--Font-size3);
+        font-size: var(--Font-size4);
         font-weight: 500;
     }
     #content-1-btns{
@@ -208,7 +208,7 @@ main{
 
     }
     #naira{
-        font-size: var(--Font-size1);
+        font-size: var(--Font-size2);
     }
     #naira, #content-1-btns a{
         font-weight: 500;
@@ -217,10 +217,11 @@ main{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         margin-left: 0;
+        gap: 1rem;
     }
     #logo img{
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         object-fit: contain;
     }
 
