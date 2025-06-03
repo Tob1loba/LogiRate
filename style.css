@@ -1,0 +1,199 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Black-1: #000; 
+    --Black-2: #1d1d1d; 
+    --Black-3: #282828;
+    --Error: #eb5757; 
+    --Gray-1: #333;
+    --Gray-2: #4f4f4f;
+    --Gray-3: #828282;
+    --Gray-4: #bdbdbd;
+    --Gray-5: #ededed;
+    --Green: #27ae6d;
+    --info: #2f8ded;
+    --white: #fff;
+    --Warning: #e2b93b;
+
+    --Family1: "Montserrat";
+    --Family2: "Poppins";
+    --Family3: "Lexend";
+    --Family4: "Inter";
+    --Family5: "Geist";
+    --Family6: "Manrope";
+    --Family7: "Roboto";
+
+    --Font-size1: 20px;
+    --Font-size2: 18px;
+    --Font-size3: 16px;
+    --Font-size4: 14px;
+    --Font-size5: 40px;
+    --Font-size6: 35px;
+    --Font-size7: 50px;
+    --Font-size8: 30px;
+
+    --Line-height1: 28px;
+    --Line-height2: 25.2px;
+    --Line-height3: 22.4px;
+    --Line-height4: 19.6px;
+}
+
+header {
+    font-weight: bold;
+}
+#nav{
+    padding: 5px 30px 20px 30px !important;
+}
+header nav  {
+    padding: 10px 40px !important;
+    background-color: var(--white) !important;
+    color: var(--Black-3);
+}
+header nav div a {
+    /* background-color: var(--Warning) !important; */
+    color: var(--Black-3);
+    font-size: var(--Font-size6) !important;
+    font-weight: 600 !important;
+}
+main{
+    font-family: var(--Family3);
+}
+.header-content{
+    font-size: var(--Font-size5);
+    font-weight: bold;
+}
+
+#content-1{
+    font-family: var(--Family1);
+    font-size: var(--Font-size6);
+    color: var(--white);
+    border-radius: 40px 40px 0 0 !important;
+    padding: 0 0 20px 0;
+    margin-top: 10rem !important;
+
+}
+#advert{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+#advert img{
+    width: 50px;
+    height: 50px;
+}
+#advert1, #advert2, #advert3{
+    background-color: var(--Black-3);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+#naira{
+    font-size: var(--Font-size7);
+    font-weight: 600;
+}
+#advert1 {
+    border-radius: 40px 0 0 0 !important;
+}
+#advert3 {
+    border-radius: 0 40px 0 0 !important;
+}
+#content-1-btns {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+    font-size: var(--Font-size1) !important;
+    
+}
+#content-1-btns a{
+    font-size: var(--Font-size8);
+    padding: 10px 60px;
+    border-radius: 25px;
+}
+    
+
+
+
+@media (max-width: 768px) {
+    
+    header nav  {
+        padding: 10px 0 !important;
+    }
+    header nav div a {
+        font-weight: 700 !important;
+        font-size: var(--Font-size1) !important;
+    }
+    .header-content p{
+        margin-bottom: 0;
+        font-size: var(--Font-size1) !important;
+        line-height: var(--Line-height1);
+        font-weight: bolder;
+    }
+    #content-1{
+        width: 90%;
+        font-size: var(--Font-size2);
+        margin-top: 5rem !important;
+        border-radius: 20px 20px 0 0 !important;
+        
+    }
+    #advert{
+        gap: .5rem;
+    }
+    #advert img{
+        width: 25px;
+        height: 25px;
+    }
+    #advert1, #advert2, #advert3 {
+        gap: .7rem;
+        margin-bottom: 1rem;
+        padding: 5px;
+        font-size: var(--Font-size3);
+    }
+    #advert1 {
+        border-radius: 20px 0 0 0 !important;
+    }
+    #advert3 {
+        border-radius: 0 20px 0 0 !important;
+    }
+    #content-1-text{
+        font-size: var(--Font-size3);
+        font-weight: 500;
+    }
+    #content-1-btns{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        font-size: var(--Font-size4);
+    }
+    #content-1-btns :hover{
+        background-color: var(--Warning);
+        border: none;
+        transition-duration: 0.3s;
+
+    }
+    #content-1-btns a{
+        font-size: var(--Font-size4);
+        padding: 6px;
+        border-radius: 20px;
+    }
+    #naira{
+        font-size: var(--Font-size1);
+    }
+    #naira, #content-1-btns a{
+        font-weight: 500;
+    }
+}
