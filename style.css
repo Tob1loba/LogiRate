@@ -156,9 +156,10 @@ main{
     }
     .header-content p{
         margin-bottom: 0;
-        font-size: var(--Font-size1) !important;
+        font-size: var(--Font-size2) !important;
         line-height: var(--Line-height1);
         font-weight: bolder;
+        width: 90%;
     }
     #content-1{
         width: 90%;
