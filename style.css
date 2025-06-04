@@ -159,8 +159,8 @@ main{
         font-size: var(--Font-size2) !important;
         line-height: var(--Line-height1);
         font-weight: bolder;
-        width: 80%;
-        /* padding: 0 20px !important; */
+        /* width: 80%; */
+        padding: 0 20px 0 20px !important;
     }
     #content-1{
         width: 90%;
