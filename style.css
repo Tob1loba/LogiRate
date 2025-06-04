@@ -156,7 +156,7 @@ main{
     }
     .header-content p{
         margin-bottom: 0;
-        font-size: var(--Font-size2) !important;
+        font-size: var(--Font-size3) !important;
         line-height: var(--Line-height1);
         font-weight: bolder;
         /* width: 80%; */
