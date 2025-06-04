@@ -160,7 +160,7 @@ main{
         line-height: var(--Line-height1);
         font-weight: bolder;
         /* width: 80%; */
-        padding: 0 20px 0 20px !important;
+        padding: 0 10px 0 10px !important;
     }
     #content-1{
         width: 90%;
