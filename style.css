@@ -104,7 +104,7 @@ section{
     line-height: var(--Line-height6);
     /* width: 80%; */
 }
-#tablet-content span{
+#tablet-content span, #choose{
     color: var(--primary);
 }
 #tablet-image img{
@@ -149,13 +149,17 @@ a{
     background-color: var(--white);
     display: flex;
     gap: 100px;
-    padding: 10px ;
+    padding: 20px 10px ;
     width: fit-content;
     padding: 10px 40px;
     border-radius: 25px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border: 1px solid var(--Gray-5);
+    z-index: 2;
+    position: relative;
     /* background-color: red; */
 }
 #peace-mass{
@@ -163,6 +167,60 @@ a{
 }
 #guo-logo, #gigm-logo, #chisco-logo{
     height: 100px;
+}
+#why-choose-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12.5rem ;
+    background-color: #fbfdfd;
+    margin-top: -122px;
+}
+#why{
+    font-size: var(--Font-size11);
+    font-weight: bolder;
+    line-height: var(--Line-height6);
+    margin-top: 11rem;
+}
+#cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem 0;
+}
+.card{
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 1rem; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border: 1px solid var(--Gray-5);
+    width: fit-content;
+}
+.card img{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+#cards-h1{
+    font-size: var(--Font-size10);
+    font-weight: 700;
+    line-height: var(--Line-height2);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#cards-p{
+    font-size: var(--Font-size2);
+    font-weight: 500;
+    line-height: var(--Line-height3);
+    color: var(--Gray-3);
+    text-align: left;
+    
+}
+#cards-p span{
+    color: var(--Black-1);
+    font-size: 700;
 }
 
 @media (min-width: 640px) and (max-width: 1024px) {
@@ -233,8 +291,7 @@ a{
         margin-top: -20px; /* Adjust as needed for overlap effect */
         z-index: 2;
         position: relative;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-        border: 1px solid var(--Gray-5);
+       
     }
    
     #peace-mass{
@@ -242,6 +299,46 @@ a{
     }
     #guo-logo, #gigm-logo, #chisco-logo{
         height: 100px;
+    }
+    #why-choose-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 12.5rem ;
+        background-color: #fbfdfd;
+        margin-top: -102px;
+    }
+    #why{
+        font-size: var(--Font-size5);
+        font-weight: bolder;
+        line-height: var(--Line-height5);
+        margin-top: 11rem;
+    }
+    #cards-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 2rem 0;
+    }
+    .card{
+        width: 220px;
+    }
+    .card img{
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+    }
+    #cards-h1{
+        font-size: var(--Font-size1);
+        text-align: center;
+    }
+    #cards-p{
+        text-align: left;
+    }
+    #cards-p span{
+        font-weight: 700;
     }
 
 }
