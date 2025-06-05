@@ -21,6 +21,7 @@
     --Green: #27ae6d;
     --info: #2f8ded;
     --primary: #00A1BF;
+    --primary2: #1a6f8c;
     --white: #fff;
     --Warning: #e2b93b;
 
@@ -65,15 +66,18 @@ header {
     align-items: baseline;
     justify-content: center;
 } */
-.navbar-brand{
-    font-size: var(--Font-size7);
-    color: var(--Black-1);
 
-}
 header nav  {
     padding: 10px 40px !important;
     background-color: var(--white) !important;
     color: var(--Black-3);
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 #nav img{
     margin-right: 5px !important;
@@ -91,7 +95,7 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px 80px;
+    padding: 1.25rem 12.5rem;
     background-color: #fbfdfd;
 }
 #h1{
@@ -120,9 +124,10 @@ section{
     font-size: var(--Font-size1);
     font-weight: 700;
     margin-bottom: 2rem;
+    background-color: var(--primary);
 }
 #tablet-content .btn:hover{
-    background-color: var(--info);
+    background-color: var(--primary2);
     /* border: none; */
     transition-duration: 0.3s;
 }
@@ -137,7 +142,7 @@ a{
 }
 #socials{
     width: 220px;
-    height: 80px;
+    height: 70px;
     object-fit: fill;
 }
 #partners{
@@ -166,6 +171,12 @@ a{
         margin-right: 5px !important;
         width: 120px;
         height: 50px;
+    }
+    .navbar-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
   
     main{
@@ -207,6 +218,7 @@ a{
         font-size: var(--Font-size1);
         font-weight: 700;
         margin-bottom: 2rem;
+        
     }
     #socials{
         width: 190px;
@@ -251,8 +263,14 @@ a{
     }
     #nav img{
         margin-right: 5px !important;
-        width: 30px;
-        height: 30px;
+        width: 90px;
+        height: 37px;
+    }
+     .navbar-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
     main{
         display: block;
