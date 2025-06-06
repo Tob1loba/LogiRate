@@ -41,9 +41,9 @@
     --Font-size6: 35px;
     --Font-size7: 50px;
     --Font-size8: 30px;
-    --Font-size9: 50px;
     --Font-size10: 22px;
     --Font-size11: 70px;
+    --Font-size12: 28px;
 
     --Line-height1: 28px;
     --Line-height2: 25.2px;
@@ -58,7 +58,7 @@ header {
     font-size: var(--Font-size6);
 }
 #nav{
-    padding: 5px 30px 20px 30px !important;
+    padding: 5px 20px 20px 30px !important;
 }
 /* #logo-container{
     display: flex;
@@ -66,6 +66,21 @@ header {
     align-items: baseline;
     justify-content: center;
 } */
+
+.d-flex .btn{
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: var(--Font-size1);
+    font-weight: 700;
+    margin-left: 1rem;
+    background-color: var(--primary);
+}
+
+.navbar-toggler:hover{
+    border: none;
+    /* background-color: yellow; */
+}
 
 header nav  {
     padding: 10px 40px !important;
@@ -84,9 +99,6 @@ header nav  {
     /* width: 60px;
     height: 90px; */
 }
-main{
-    display: none;
-}
 section{
     display: block;
     font-family: var(--Family1);
@@ -99,16 +111,19 @@ section{
     background-color: #fbfdfd;
 }
 #h1{
-    font-size: var(--Font-size11);
+    font-size: var(--Font-size7);
     font-weight: bolder;
     line-height: var(--Line-height6);
+    margin-top: 2rem;
     /* width: 80%; */
 }
 #tablet-content span, #choose{
     color: var(--primary);
 }
 #tablet-image img{
-    margin: 30px 0 0 0;
+    margin: 4rem 0 0 0;
+    width: 300px;
+    height: 500px;
 }
 #p{
     font-size: var(--Font-size10);
@@ -116,6 +131,9 @@ section{
     line-height: var(--Line-height2);
     /* width: 80%; */
     margin-bottom: 0 !important;
+}
+#tablet-content {
+    text-align: left;         
 }
 #tablet-content .btn{
     border-radius: 10px;
@@ -138,7 +156,7 @@ a{
     display: flex;
     flex-direction: row;
     gap: 10px;
-
+    justify-content: left;
 }
 #socials{
     width: 220px;
@@ -153,7 +171,7 @@ a{
     width: fit-content;
     padding: 10px 40px;
     border-radius: 25px;
-    margin: 0 auto;
+    margin: 1rem auto 0 auto ; /* Adjust as needed for overlap effect */
     justify-content: center;
     align-items: center;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
@@ -175,13 +193,13 @@ a{
     align-items: center;
     padding: 0 12.5rem ;
     background-color: #fbfdfd;
-    margin-top: -122px;
+    margin-top: -140px;
 }
 #why{
-    font-size: var(--Font-size11);
+    font-size: var(--Font-size7);
     font-weight: bolder;
     line-height: var(--Line-height6);
-    margin-top: 11rem;
+    margin-top: 14rem;
 }
 #cards-container{
     display: flex;
@@ -225,6 +243,16 @@ a{
 
 @media (min-width: 640px) and (max-width: 1024px) {
     
+    #d-flex {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center!important;
+        align-items: center;
+    }
+    .d-flex .btn{
+        padding: 5px 10px;
+        font-size: var(--Font-size3);
+    }
     #nav img{
         margin-right: 5px !important;
         width: 120px;
@@ -235,10 +263,6 @@ a{
         justify-content: center;
         align-items: center;
         gap: 10px;
-    }
-  
-    main{
-        display: none;
     }
     header nav  {
         padding: 20px 30px !important;
@@ -252,31 +276,36 @@ a{
         padding: 20px 80px;
     }
     #h1{
-        font-size: var(--Font-size5);
+        font-size: var(--Font-size12);
         font-weight: bolder;
         line-height: var(--Line-height5);
         /* width: 80%; */
     }
     #tablet-image img{
-        margin: 30px 0 0 0;
-    }
-    #tablet-image img{
-        margin: 80px 0 0 0;
+        margin: 5rem 0 0 0;
+        width: 300px;
+        height: 450px;
     }
     #p{
-        font-size: var(--Font-size10);
+        font-size: var(--Font-size4);
         font-weight: 600;
         line-height: var(--Line-height2);
         /* width: 80%; */
         margin-bottom: 0 !important;
     }
+    #tablet-content {
+        text-align: left;         
+    }
     #tablet-content .btn{
         border-radius: 10px;
         padding: 10px 80px;
-        font-size: var(--Font-size1);
+        font-size: var(--Font-size4);
         font-weight: 700;
         margin-bottom: 2rem;
         
+    }
+     #socials-container {
+        justify-content: left;
     }
     #socials{
         width: 190px;
@@ -288,7 +317,7 @@ a{
         padding: 10px 30px;
         border-radius: 25px;
         margin: 0 auto;
-        margin-top: -20px; /* Adjust as needed for overlap effect */
+        margin-top: -50px ; /* Adjust as needed for overlap effect */
         z-index: 2;
         position: relative;
        
@@ -310,7 +339,7 @@ a{
         margin-top: -102px;
     }
     #why{
-        font-size: var(--Font-size5);
+        font-size: var(--Font-size12);
         font-weight: bolder;
         line-height: var(--Line-height5);
         margin-top: 11rem;
@@ -331,11 +360,12 @@ a{
         margin: 0 auto;
     }
     #cards-h1{
-        font-size: var(--Font-size1);
+        font-size: var(--Font-size3);
         text-align: center;
     }
     #cards-p{
         text-align: left;
+        font-size: var(--Font-size4);
     }
     #cards-p span{
         font-weight: 700;
@@ -363,110 +393,132 @@ a{
         width: 90px;
         height: 37px;
     }
-     .navbar-nav{
+    .collapse.navbar-collapse {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: var(--white); /* Optional: for visibility */
+        text-align: center;
+        margin: 0 auto;
+        position: absolute; left: 0; 
+        top: 60px;
+    }
+    .navbar-nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
-    main{
-        display: block;
-        font-family: var(--Family3);
+    .d-flex .btn{
+        display: none;
     }
+    
     header nav  {
         padding: 10px 0 !important;
     }
     header nav div a {
         font-weight: 700 !important;
-        font-size: var(--Font-size1) !important;
+        font-size: var(--Font-size3) !important;
         color: var(--Black-3);
     }
-    .header-content p{
-        margin-bottom: 0;
-        font-size: var(--Font-size3) !important;
-        line-height: var(--Line-height1);
-        font-weight: bolder;
-        /* width: 80%; */
-        padding: 0 10px 0 10px !important;
+    #tablet{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
     }
-    #content-1{
-        font-family: var(--Family1);
-        color: var(--white);
-        width: 90%;
+    #h1{
+        font-size: var(--Font-size1);
+        font-weight: bolder;
+        line-height: var(--Line-height1);
+        text-align: center;
+        /* width: 80%; */
+    }
+    #tablet-image img{
+        display: block;
+        margin: 3rem auto 2rem auto;
+        width: 200px;
+        height: 220px;
+        object-fit: cover;
+        object-position: top;
+    }
+    #p{
+        font-size: var(--Font-size3);
+        font-weight: 600;
+        line-height: var(--Line-height2);
+        text-align: center;
+        /* width: 80%; */
+        margin-bottom: 0 !important;
+    }
+    #tablet-content {
+        text-align: center;         
+    }
+    #tablet-content .btn{
+        border-radius: 10px;
+        padding: 10px 40px;
         font-size: var(--Font-size2);
-        margin-top: 5rem !important;
-        border-radius: 20px 20px 0 0 !important;
-        padding: 0 0 20px 0;
+        font-weight: 500;
+        display: inline-block;
+        margin: 0 auto 1rem auto;
         
     }
-    #advert{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: .5rem;
+    #socials-container {
+        justify-content: center;
     }
-    #advert img{
-        width: 20px;
-        height: 20px;
-    }
-    #advert1, #advert2, #advert3 {
-        background-color: var(--Black-3);
-        text-align: center;
+    #socials{
+        width: 120px;
+        height: 40px;
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+        align-items: center;    
+        margin: 0 auto;
+    }
+    #partners{
+       display: none;
+       
+    }
+    #why-choose-us{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: .7rem;
-        margin-bottom: 1rem;
-        padding: 5px;
-        font-size: var(--Font-size4);
+        padding: 0;
+        background-color: #fbfdfd;
+        margin-top: 0;
     }
-    #advert1 {
-        border-radius: 20px 0 0 0 !important;
+    #why{
+        font-size: var(--Font-size1);
+        font-weight: bolder;
+        line-height: var(--Line-height1);
+        margin-top: 2rem;
     }
-    #advert3 {
-        border-radius: 0 20px 0 0 !important;
-    }
-    #content-1-text{
-        font-size: var(--Font-size4);
-        font-weight: 500;
-    }
-    #content-1-btns{
+    #cards-container{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: 1.5rem;
-        margin-top: 1rem;
-        font-size: var(--Font-size4);
+        gap: 20px;
+        padding: 1rem 0;
     }
-    #content-1-btns a{
-        font-size: var(--Font-size4);
-        padding: 6px;
-        border-radius: 20px;
+    .card{
+        width: 320px;
+        padding: 1rem 2rem;
     }
-    #content-1-btns a:hover{
-        background-color: var(--Green);
-        /* border: none; */
-        transition-duration: 0.3s;
-
+    .card img{
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
     }
-    #naira{
+    #cards-h1{
         font-size: var(--Font-size2);
+        text-align: center;
     }
-    #naira, #content-1-btns a{
-        font-weight: 500;
+    #cards-p{
+        text-align: center;
+        font-size: var(--Font-size3);
     }
-    #logo{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        margin-left: 0;
-        gap: 1rem;
+    #cards-p span{
+        font-weight: 700;
     }
-    #logo img{
-        width: 3rem;
-        height: 3rem;
-        object-fit: contain;
-    }
-    section{
-        display: none;
-    }
+
 
 }
